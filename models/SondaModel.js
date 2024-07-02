@@ -6,7 +6,7 @@ class Sonda {
         const sonda = {
             "id": id,
             "temperatura": temperatura,
-            "fechaIngreso": new Date()
+            "fechaIngreso": new Date().toLocaleString()
         }
         this.sondas.push(sonda);
         return this.sondas[this.sondas.length - 1]
