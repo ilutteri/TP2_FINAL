@@ -30,7 +30,7 @@ class SondaService {
             const data = await this.sondaModel.getById(id);
             return data;
         } catch (error) {
-            
+            throw error
         }
     }
 
